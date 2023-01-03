@@ -53,7 +53,7 @@ function Home({ articleIngo }) {
       <section id="first-section">
         <Countdown targetDate={oneHour} />
         <Link to="/tickets">
-          <button className="btn">BUY NOW</button>
+          <button className="btn">BUY TICKET NOW</button>
         </Link>
       </section>
     <Suspense fallback={<div>Loading...</div>}>
