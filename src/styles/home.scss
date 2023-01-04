@@ -15,9 +15,41 @@
   padding: 2rem;
   position: relative;
   //padding-bottom: 5rem;
-
+  .tagline {
+    font-family: 'Aguafina Script', cursive;
+    font-size: clamp(1.44rem, 1.16rem + 1.118vw, 1.999rem);
+    word-spacing: 0.3rem;
+    color: white;
+    z-index: 2;
+ 
+  }
   div {
     display: flex;
+  }
+  .shake {
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: skewX(-20deg);
+    }
+    5% {
+      transform: skewX(20deg);
+    }
+    10% {
+      transform: skewX(-20deg);
+    }
+    15% {
+      transform: skewX(20deg);
+    }
+    20% {
+      transform: skewX(0deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
   }
 }
 a {
@@ -47,4 +79,28 @@ a {
   .react-countdown-simple__colon {
     -webkit-text-stroke-width: 3px;
   }
+}
+
+.scroll-to-top {
+  background-color: transparent !important;
+  right: 40px;
+  bottom: 70px !important;
+  position: fixed;
+  z-index: 3 !important;
+  cursor: pointer;
+  border-radius: 5px !important;
+  /*  width: 30px !important;
+  height: 30px !important; */
+  box-shadow: none !important;
+  border: none;
+  p {
+    color: transparent;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: v.$color-cyan-normal;
+  }
+}
+
+.scroll-to-top:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
 }

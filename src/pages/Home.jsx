@@ -10,6 +10,7 @@ import Countdown from "react-countdown-simple";
 //import NewsStories from "../components/news/NewsStories";
 import data from "../assets/newstories.json";
 import TicketsShop from "../components/shop/TicketsShop";
+import ScrollToTop from "react-scroll-to-top";
 const QuickAbout = React.lazy(() => import("../components/about/QuickAbout"));
 const Schedule = React.lazy(() => import("./Schedule"));
 const AboutCamping = React.lazy(() => import("../components/camping/AboutCamping"));
@@ -18,6 +19,8 @@ const NewsStories = React.lazy(() => import("../components/news/NewsStories"));
 
 
 function Home({ articleIngo }) {
+  
+  
   const ShortText = {
     about: (
       <p>
@@ -51,25 +54,29 @@ function Home({ articleIngo }) {
   return (
     <>
       <section id="first-section">
+       
         <Countdown targetDate={oneHour} />
+        <p className="tagline">Experience the Magic of Music at FooFest!</p>
         <Link to="/tickets">
-          <button className="btn">BUY TICKET NOW</button>
+          <button className="btn shake">BUY TICKET NOW</button>
         </Link>
       </section>
-    <Suspense fallback={<div>Loading...</div>}>
-      <NewsStories
-        articleIngo={articleIngo}
-        stories={stories.slice(0, 3)}
-        newsHeadline={
-          <h2>
-            <Link to="/news">FOOFEST NEWS</Link>
-          </h2>
-        }
-      />
-      <Schedule />
-      <QuickAbout text={ShortText.about} fromHomepage={true} />
-      <TicketsShop />
-      <AboutCamping text={ShortText.camping} fromHomepage={true} /></Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <NewsStories
+          articleIngo={articleIngo}
+          stories={stories.slice(0, 3)}
+          newsHeadline={
+            <h2>
+              <Link to="/news">FOOFEST NEWS</Link>
+            </h2>
+          }
+        />
+        <Schedule />
+        <QuickAbout text={ShortText.about} fromHomepage={true} />
+        <TicketsShop />
+        <AboutCamping text={ShortText.camping} fromHomepage={true} />
+      </Suspense>
+      <ScrollToTop smooth className="scroll-to-top" width="15" height="15" component={<p>🡹</p>} />
     </>
   );
 }

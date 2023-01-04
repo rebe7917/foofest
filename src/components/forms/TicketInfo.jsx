@@ -6,6 +6,7 @@ function TicketInfo({ type, finishedAdding }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   const [txt, setTxt] = useState("");
+ 
 
   // validate the email
   function isValidEmail(email) {
@@ -22,9 +23,11 @@ function TicketInfo({ type, finishedAdding }) {
     if (!isValidEmail(event.target.value)) {
       setError("Email is invalid");
     } else {
-      setError(null);
+      setError("Your ticket will be sent to this email");
     }
   }
+
+
 
   // validate the name
   const onInputChange = (e) => {
@@ -68,7 +71,9 @@ function TicketInfo({ type, finishedAdding }) {
             value={message}
             onBlur={handleBlur}
           />
+        
           <span>{error}</span>
+          
         </label>
 
         <label className="label-birthday">

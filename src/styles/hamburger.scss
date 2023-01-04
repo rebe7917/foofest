@@ -50,7 +50,12 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: v.$color-purple-normal;
     font-weight: 900;
+ 
   }
+  
+     button:hover{
+color: v.$color-purple-normal;
+    }
   a {
     display: grid;
     align-content: center;
@@ -66,6 +71,9 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
+    /*   .menu-logo:hover {
+      color: v.$color-purple-normal;
+    } */
   }
 }
 .changeFont {
