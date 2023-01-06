@@ -1,6 +1,7 @@
 import "../styles/alternating-sections.scss";
 import QuickAbout from "../components/about/QuickAbout";
 import Sustainabilty from "../components/about/Sustainabilty";
+import ScrollToTop from "react-scroll-to-top";
 
 function About() {
   const paragraph = (
@@ -29,6 +30,7 @@ function About() {
     <>
       <QuickAbout text={paragraph} />
       <Sustainabilty />
+      <ScrollToTop smooth className="scroll-to-top" width="15" height="15" component={<p>🡹</p>} />
     </>
   );
 }

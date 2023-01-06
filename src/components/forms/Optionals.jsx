@@ -31,15 +31,9 @@ function Optionals({ ticket, addToTicket }) {
             onChange={(evt) => addToTicket("tentAmount", Number(evt.target.value))}
           />
           <span className="checkmark"></span>
-          {/* <label htmlFor="three-person" className="three-camp">
-          <span>3 person camp</span> <span> 399,-</span>
-        </label>
-        <input type="checkbox" name="three-person" id="green-campingthree-person" /> */}
+      
         </fieldset>
-        {/*  <div className="button-container">
-        <button>BACK</button>
-        <button>NEXT</button>
-      </div> */}
+     
       </div>
     </>
   );

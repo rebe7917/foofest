@@ -38,10 +38,7 @@ export default function CampingArea({ spots, addToTicket, ticket, emptyField }) 
           </div>
         ))}
       </fieldset>
-      {/*       <div className="button-container">
-        <button>BACK</button>
-        <button>NEXT</button>
-      </div> */}
+     
     </>
   );
 }

@@ -54,9 +54,9 @@ function Home({ articleIngo }) {
   return (
     <>
       <section id="first-section">
-       
-        <Countdown targetDate={oneHour} />
         <p className="tagline">Experience the Magic of Music at FooFest!</p>
+        <Countdown targetDate={oneHour} />
+
         <Link to="/tickets">
           <button className="btn shake">BUY TICKET NOW</button>
         </Link>

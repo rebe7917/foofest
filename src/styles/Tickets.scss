@@ -156,6 +156,7 @@
       label {
         /*min-width: 200px;*/
         width: 100%;
+        
       }
       /*input {
         width: 50px;
@@ -164,6 +165,7 @@
       .vip-label {
         display: flex;
         justify-content: space-between;
+        align-items: center;
       }
     }
 
@@ -204,6 +206,11 @@
       input {
         width: 50px;
         accent-color: #9400f6;
+      }
+      label{
+        display: flex;
+        
+        align-items: center;
       }
       .avail-box {
         background-color: v.$color-black-dark;
@@ -246,6 +253,7 @@
       label {
         display: flex;
         justify-content: space-between;
+        align-items: center;
       }
       #green-camping {
         min-height: 0;
@@ -545,14 +553,7 @@
             min-width: 250px;
           }
         }
-        /*   .concert-img{
-            width: 100%;
-            height: auto;            
-       background-image: url(public/concert.png);
-        background-size: cover; 
-        background-position: 50%;
-
-    } */
+   
       }
     }
 

@@ -2,6 +2,7 @@ import "../styles/alternating-sections.scss";
 import GreenCamping from "../components/camping/GreenCamping";
 import AboutCamping from "../components/camping/AboutCamping";
 import CrewSetUp from "../components/camping/CrewSetUp";
+import ScrollToTop from "react-scroll-to-top";
 
 function Camping() {
   const paragraph = (
@@ -22,6 +23,7 @@ function Camping() {
       <AboutCamping text={paragraph} />
       <GreenCamping />
       <CrewSetUp />
+      <ScrollToTop smooth className="scroll-to-top" width="15" height="15" component={<p>🡹</p>} />
     </section>
   );
 }

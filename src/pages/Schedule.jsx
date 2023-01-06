@@ -2,6 +2,7 @@ import "../styles/Schedule.scss";
 import PopUp from "../components/schedule/PopUp";
 import ScheduleLayout from "../components/schedule/ScheduleLayout";
 import { useState, useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 function Schedule() {
   const [scheduleData, setScheduleData] = useState([]);
@@ -62,6 +63,7 @@ function Schedule() {
       <h2>FOOFEST PROGRAM</h2>
       <ScheduleLayout onOpenPopUp={handleOpenPopUp} bandsData={bandsData} scheduleData={scheduleData} />
       <PopUp popUpIsOpen={popUpIsOpen} onClosePopUp={handleClosePopUp} data={displayData} />
+      <ScrollToTop smooth className="scroll-to-top" width="15" height="15" component={<p>🡹</p>} />
     </section>
   );
 }

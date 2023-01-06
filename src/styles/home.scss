@@ -17,11 +17,12 @@
   //padding-bottom: 5rem;
   .tagline {
     font-family: 'Aguafina Script', cursive;
-    font-size: clamp(1.44rem, 1.16rem + 1.118vw, 1.999rem);
+    font-size: clamp(1.44rem, 1.16rem + 1.118vw, 1.8rem);
     word-spacing: 0.3rem;
     color: white;
     z-index: 2;
- 
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
   }
   div {
     display: flex;
@@ -66,7 +67,7 @@ a {
 //countdown font size
 .react-countdown-simple__date-time,
 .react-countdown-simple__colon {
-  font-size: clamp(1rem, 8vw, 6rem) !important;
+  font-size: clamp(1.5rem, 6vw, 6rem) !important;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: v.$color-cyan-normal;

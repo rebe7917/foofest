@@ -33,7 +33,7 @@ function TicketType({ addToTicket, emptyField }) {
           {emptyField ? <p style={{ color: "red" }}>Please select a ticket type</p> : ""}
           <fieldset id="ticket-type">
             <label htmlFor="regular" className="regular-label">
-              <span>REGULAR </span>
+              <span>Regular </span>
               <span>
                 {" "}
                 <b>799,-</b>
