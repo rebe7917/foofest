@@ -54,7 +54,7 @@ function TicketInfo({ type, finishedAdding }) {
 
         <label className="label-email">
           Email <input type="email" name="email" className="email" autoComplete="email" onChange={handleChange} value={message} onBlur={handleBlur} />
-          {mail ? <span>{error}</span> : <span style={{ color: "#b04df2" }}>{error}</span>}
+          {mail ? <span>{error}</span> : <span style={{ color: "white" }}>{error}</span>}
         </label>
 
         <label className="label-birthday">
