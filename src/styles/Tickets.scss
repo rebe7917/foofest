@@ -148,19 +148,11 @@
       display: grid;
       grid-template-columns: 4fr 1fr;
       gap: 1rem;
-      /*  display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between ;
-    gap: 1rem; */
+    
 
       label {
-        /*min-width: 200px;*/
         width: 100%;
-        
       }
-      /*input {
-        width: 50px;
-      }*/
       .regular-label,
       .vip-label {
         display: flex;
@@ -173,7 +165,10 @@
       padding: 16px;
       border-radius: 5px;
       background-color: v.$color-black-light;
-
+      .email{
+          display: grid;
+          gap: 5rem;
+        }
       summary {
         color: v.$color-white-normal;
         font-weight: 700;
@@ -187,6 +182,7 @@
         label {
           margin-top: 0.5rem;
         }
+        
 
         label + label {
           margin-top: 1rem;
@@ -269,7 +265,7 @@
 
         span {
           color: red;
-          /*font-size: 0.8rem;*/
+          font-size: 0.8rem;
         }
        
        
