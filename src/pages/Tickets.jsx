@@ -104,10 +104,6 @@ function Tickets() {
     //console.log(response);
   }
  
-
-
-
-
   // Progress tracker from Ant Design
   const steps = [
     {
