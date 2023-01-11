@@ -28,7 +28,13 @@ footer {
       -webkit-text-stroke-color: v.$color-cyan-normal;
       color: transparent;
       font-weight: 900;
+   
     }
+       h4:hover{
+        color: v.$color-cyan-normal;
+         -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: transparent;
+      }
   }
   a {
     text-decoration: none;
