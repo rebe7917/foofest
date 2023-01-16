@@ -32,11 +32,9 @@ function Payment({ ticket, addToTicket, emptyField, payComplet }) {
 
   return (
     <>
-      {/*   <Basket ticket={ticket} /> */}
       {payComplet ? (
         <>
           <OrderComplete />
-          {/* <Basket ticket={ticket} /> */}
         </>
       ) : (
         <section ref={sectionEl}>
