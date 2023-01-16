@@ -1,5 +1,5 @@
 import { useState } from "react";
-function CreditCardInfo({ finishedAdding, emptyField, ticket }) {
+function CreditCardInfo({ finishedAdding, emptyField }) {
   const [txt, setTxt] = useState("");
   const [creidtNr, setCreidtNr] = useState("");
   const [creidtNrSpan, setCreidtNrSpan] = useState(false);
