@@ -1,16 +1,11 @@
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
-//import Tickets from "../pages/Tickets";
-//import Camping from "../pages/Camping";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import "../styles/hamburger.scss";
-//import Schedule from "../pages/Schedule";
-//import Footer from "./Footer";
 import { useState, useEffect } from "react";
 import Error from "../pages/Error";
 import Jobs from "../pages/Jobs";
-//import News from "../pages/News";
 import Article from "./news/Article";
 import ScrollToTop from "../utils/ScrollToTop";
 //Lazy loading components
@@ -131,12 +126,7 @@ function Hamburger() {
             <Route path="/news" element={<News />}></Route>
             <Route path={`news/:id`} element={<Article />}></Route>
 
-            {/* <Route
-              path={`/news/${articleContent.url}`}
-              element={
-                <Article headline={articleContent.headline} story={articleContent.story} image={articleContent.image} />
-              }
-            ></Route> */}
+           
             <Route path="/" element={<Home articleIngo={articleIngo} />}></Route>
             <Route path="*" element={<Error />} />
           </Routes>
